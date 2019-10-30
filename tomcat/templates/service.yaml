@@ -4,7 +4,7 @@ metadata:
   name: apache2-service
 spec:
   selector:
-    app: tomcat
+    app: apache2-sana
   ports:
   - protocol: TCP
     port: 80
