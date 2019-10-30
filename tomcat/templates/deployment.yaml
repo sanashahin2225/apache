@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tomcat-deployment-new
+  name: apache2-webserver
   labels:
-    app: tomcat-sana
+    app: apache2-sana
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tomcat-sana
+      app: apache2-sana
   template:
     metadata:
       labels:
-        app: tomcat-sana
+        app: apache2-sana
     spec:
       containers:
       - name: tomcat-sana
-        image: sanashahin2225/tomcat:latest
+        image: sanashahin2225/apache2:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8181
 
