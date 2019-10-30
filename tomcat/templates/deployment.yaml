@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment-new
+  labels:
+    app: tomcat-sana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat-sana
+  template:
+    metadata:
+      labels:
+        app: tomcat-sana
+    spec:
+      containers:
+      - name: tomcat-sana
+        image: sanashahin2225/tomcat:latest
+        ports:
+        - containerPort: 8080
+
