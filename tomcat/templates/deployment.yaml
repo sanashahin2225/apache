@@ -15,7 +15,7 @@ spec:
         app: apache2-sana
     spec:
       containers:
-      - name: tomcat-sana
+      - name: apache2-sana
         image: sanashahin2225/apache2:latest
         ports:
         - containerPort: 8181
