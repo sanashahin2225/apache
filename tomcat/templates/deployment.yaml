@@ -18,5 +18,5 @@ spec:
       - name: apache2-sana
         image: sanashahin2225/apache2:latest
         ports:
-        - containerPort: 8181
+        - containerPort: 8081
 
